@@ -47,24 +47,25 @@ Keep your answers clear and very brief. Messy or long answers will not be
 marked.
 
 === Question 0 ===
-
 (2 Marks)
 
 Consider the following C definition:
+
 
 {{{
 char str[] = "Hello World?";
 }}}
 
-The size of the array str in characters is:
 
+The size of the array str in characters is:
+ 
  .[A] 12
  .[B] 13
  .[C] 24
  .[D] 26
  .[E] None of the above
-
-
+ 
+ 
 === Question 1 ===
 
 (2 Marks)
