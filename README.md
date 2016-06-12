@@ -568,12 +568,17 @@ You may assume that N is a positive integer between 1 and 1,000,000.
 int main( int argc, char **argv ){
     long long cnt = 0;
     long long val = 0;
+    // Get number from User
     scanf("%lld", &val);
+    // Whilst it's even
     while( (val % 2) == 0 ){
+        // Divide it and count
         val /= 2;
         cnt++;
     }
+    // Print the count
     printf("%lld\n",cnt);
+    return EXIT_SUCCESS;
 }
 ```
 
