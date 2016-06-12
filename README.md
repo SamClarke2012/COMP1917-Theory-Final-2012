@@ -125,7 +125,7 @@ What will this program print out?
 
 + [A] 1
 + [B] 2
-+ [C] **3**
++ **[C] 3**
 + [D] 4
 + [E] None of the above
 
@@ -163,7 +163,7 @@ What will the value of d->real after executing this code?
 + [A] 1.0
 + [B] 3.0
 + [C] 5.0
-+ [D] **It is undefined** - New struct created in function stack frame, destroyed upon return
++ **[D] It is undefined - New struct created in function stack frame, destroyed upon return**
 + [E] None of the above
 
 
@@ -188,7 +188,7 @@ Consider the following code fragment:
 
 After this code is executed, array x contains the values:
 
-+ [A] ***{3, 2, 2, 0}***
++ **[A] {3, 2, 2, 0}**
 + [B] {0, 1, 2, 3}
 + [C] {3, 2, 1, 0}
 + [D] It is undefined
@@ -236,7 +236,7 @@ to make my function work properly.  What is an ordering of the five
 numbered lines of code that makes the function correct?
 
 + [A] 1, 2, 3, 4, 5
-+ [B] **2, 1, 3, 4, 5**
++ **[B] 2, 1, 3, 4, 5**
 + [C] 2, 5, 1, 4, 3
 + [D] 2, 1, 5, 3, 4
 + [E] None of the above
