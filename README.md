@@ -389,7 +389,7 @@ void insert(int a[], int *size, int value) {
 
 What is the main point you would raise in reviewing the above code?
 
-**a[i+1] will overflow then i reaches size-1 since i is used to index array directly - Fence post error**
+**a[i+1] will overflow when i reaches size-1 since i is used to index array directly - Fence post error**
 
 
 
