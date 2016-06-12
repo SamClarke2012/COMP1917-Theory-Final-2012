@@ -448,16 +448,22 @@ For example `drawBox(4)` should produce
 ```c
 void draw( int n ){
     int i = 0;
+    // For each row
     while( i < n ){
+        // If first or last 
         if( i == 0 || i == n-1){
             int c = 0;
+            // Print bar of stars
             while( c < n ){
                 printf("*");
                 c++;
             }
+            // New row
             printf("\n");
+        // Otherwise, for mid sections
         } else {
             int c = 0;
+            // Do stars and spaces
             while( c < n ){
                 if( c == 0 || c == (n-1)){
                     printf("*");
@@ -466,6 +472,7 @@ void draw( int n ){
                 }
                 c++;
             }
+            // New row
             printf("\n");
         }
         i++;
@@ -490,12 +497,16 @@ int isAlNum (char c);
 ```c
 int isAlNum( char c ){
     int ans;
+    // Numerical?
     if( c >= '0' && c <= '9'){
         ans = 1;
+    // Uppercase?
     } else if( c >= 'A' && c <= 'Z'){
         ans = 1;
+    // Lowercase?
     } else if( c >= 'a' && c <= 'z'){
         ans = 1;
+    // None of those...
     } else {
         ans = 0;
     }
