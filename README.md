@@ -97,11 +97,11 @@ for(i=0; i<5; i++) {
 
 What is the value of *(&x[2]+1)? 
 
- +[A] 0
- +[B] 1
- +[C] 4
- +[D] **9** - Dereferenced value at pointer (x[2])+1
- +[E] None of the above
++[A] 0
++[B] 1
++[C] 4
++[D] **9** - Dereferenced value at pointer (x[2])+1
++[E] None of the above
 
 
 === Question 3 ===
@@ -123,11 +123,11 @@ printf("%d\n",a);
 
 What will this program print out?
 
- +[A] 1
- +[B] 2
- +[C] **3**
- +[D] 4
- +[E] None of the above
++[A] 1
++[B] 2
++[C] **3**
++[D] 4
++[E] None of the above
 
 === Question 4 ===
 
@@ -160,11 +160,11 @@ d = add(*c,a);
 
 What will the value of d->real after executing this code?
 
- +[A] 1.0
- +[B] 3.0
- +[C] 5.0
- +[D] **It is undefined** - New struct created in function stack frame, destroyed upon return
- +[E] None of the above
++[A] 1.0
++[B] 3.0
++[C] 5.0
++[D] **It is undefined** - New struct created in function stack frame, destroyed upon return
++[E] None of the above
 
 
 === Question 5 ===
@@ -187,11 +187,12 @@ Consider the following code fragment:
 ```
 
 After this code is executed, array x contains the values:
- +[A] ***{3, 2, 2, 0}***
- +[B] {0, 1, 2, 3}
- +[C] {3, 2, 1, 0}
- +[D] It is undefined
- +[E] None of the above
+
++[A] ***{3, 2, 2, 0}***
++[B] {0, 1, 2, 3}
++[C] {3, 2, 1, 0}
++[D] It is undefined
++[E] None of the above
 
 === Question 6 ===
 
@@ -234,11 +235,11 @@ the five numbered lines in the code above might have to be rearranged
 to make my function work properly.  What is an ordering of the five
 numbered lines of code that makes the function correct?
 
- +[A] 1, 2, 3, 4, 5
- +[B] **2, 1, 3, 4, 5**
- +[C] 2, 5, 1, 4, 3
- +[D] 2, 1, 5, 3, 4
- +[E] None of the above
++[A] 1, 2, 3, 4, 5
++[B] **2, 1, 3, 4, 5**
++[C] 2, 5, 1, 4, 3
++[D] 2, 1, 5, 3, 4
++[E] None of the above
 
 
 === Question 7 ===
@@ -253,35 +254,35 @@ int product;
 int i;
 ```
 
- +[A]  
++[A]  
 ```c
 product = 1;
 for (i = 0; i <= N; i++) {
    product *= a[i];
 }
 ```
- +[B] 
++[B] 
 ```c
 product = 0;
 for (i = 0; i <= N; i++) {
    product *= a[i];
 }
 ```
- +[C] 
++[C] 
 ```c
 product = 0;
 for (i = 1; i <= N-1; i++) {
    product *= a[i];
 }
 ```
- +**[D] - Watch the fence posts! - zero goes with less than, and product must = 1.**
++**[D] - Watch the fence posts! - zero goes with less than, and product must = 1.**
 ```c
 product = 1;
 for (i = 1; i <= N-1; i++) {
    product *= a[i];
 }
 ```
- +[E] None of the above
++[E] None of the above
 
 
 
@@ -305,11 +306,11 @@ giving the address and meaning of each instruction.)
 0 //11 Halt
 ```
 
- +[A] 0
- +[B] 2
- +[C] 4
- +**[D] 6**
- +[E] None of the above
++[A] 0
++[B] 2
++[C] 4
++**[D] 6**
++[E] None of the above
 
 === Question 9 ===
 
@@ -330,11 +331,11 @@ printf("%c\n",a[1+strlen(a)]);
 
 What will this program print out?
 
- +[A] A
- +[B] B
- +[C] C
- +**[D] D - strlen counts to NULL, chars still in memory**
- +[E] None of the above
++[A] A
++[B] B
++[C] C
++**[D] D - strlen counts to NULL, chars still in memory**
++[E] None of the above
 
 === Question 10 ===
 
@@ -361,11 +362,11 @@ x = f(&z, x, &y);
 ```
 
 After this code is executed, x has the value:
- +[A] 1
- +**[B] 2 - Follow the the values, g() simplifies to x+x^2 - f() just swaps things around 1+1^2 = 2**
- +[C] 3
- +[D] 4
- +[E] None of the above
++[A] 1
++**[B] 2 - Follow the the values, g() simplifies to x+x^2 - f() just swaps things around 1+1^2 = 2**
++[C] 3
++[D] 4
++[E] None of the above
 
 
 === Question 11 ===
