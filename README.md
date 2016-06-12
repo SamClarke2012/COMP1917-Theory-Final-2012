@@ -68,9 +68,9 @@ The size of the array str in characters is:
 (2 Marks)
 
 Consider the following C code:
-'''c
+```c
 char *s = "dcba";
-'''
+```
 
 What is the value of `s[4]`?
 
