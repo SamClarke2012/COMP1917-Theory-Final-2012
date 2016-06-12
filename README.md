@@ -438,12 +438,12 @@ int drawBox(int n);
 that draws a hollow box n characters wide and high using '*' and ' '
 characters.
 For example `drawBox(4)` should produce
-{{{
+```c
 ****
 *  *
 *  *
 ****
-}}}
+```
 
 ```c
 void draw( int n ){
