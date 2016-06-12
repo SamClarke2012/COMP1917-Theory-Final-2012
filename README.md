@@ -59,10 +59,15 @@ char str[] = "Hello World?";
 The size of the array str in characters is:
  
 +[A] 12
+
 +[B] 13
+
 +[C] 24
+
 +[D] 26
+
 +[E] None of the above
+
  
 === Question 1 ===
 (2 Marks)
