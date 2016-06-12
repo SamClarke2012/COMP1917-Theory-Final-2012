@@ -59,7 +59,7 @@ char str[] = "Hello World?";
 The size of the array str in characters is:
  
 + [A] 12
-+ [B] **13**
++ **[B] 13**
 + [C] 24
 + [D] 26
 + [E] None of the above
@@ -79,7 +79,7 @@ What is the value of s[4]?
 + [B] 0
 + [C] segmentation violation
 + [D] 4
-+ [E] **None of the above** - resolves the NULL char '\0'
++ **[E] None of the above - resolves the NULL char '\0'**
 
 
 === Question 2 ===
@@ -100,7 +100,7 @@ What is the value of *(&x[2]+1)?
 + [A] 0
 + [B] 1
 + [C] 4
-+ [D] **9** - Dereferenced value at pointer (x[2])+1
++ [D] **9 - Dereferenced value at pointer (x[2])+1)**
 + [E] None of the above
 
 
