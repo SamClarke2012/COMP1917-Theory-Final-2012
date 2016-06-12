@@ -59,7 +59,7 @@ char str[] = "Hello World?";
 The size of the array str in characters is:
  
 + [A] 12
-+ [B] 13
++ [B] **13**
 + [C] 24
 + [D] 26
 + [E] None of the above
@@ -75,11 +75,11 @@ char *s = "dcba";
 
 What is the value of s[4]?
 
- .[A] 'a'
- .[B] 0
- .[C] segmentation violation
- .[D] 4
- .[E] None of the above
++ [A] 'a'
++ [B] 0
++ [C] segmentation violation
++ [D] 4
++ [E] **None of the above** - resolves the NULL char '\0'
 
 
 === Question 2 ===
