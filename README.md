@@ -52,9 +52,9 @@ marked.
 Consider the following C definition:
 
 
-{{{
+```c
 char str[] = "Hello World?";
-}}}
+```
 
 The size of the array str in characters is:
  
@@ -72,7 +72,7 @@ Consider the following C code:
 char *s = "dcba";
 ```
 
-What is the value of `s[4]`?
+What is the value of s[4]?
 
  .[A] 'a'
  .[B] 0
@@ -86,14 +86,15 @@ What is the value of `s[4]`?
 (2 Marks)
 
 Consider the following C code:
-{{{
+```c
 int i;
 int *x = malloc(10*sizeof(int));
 for(i=0; i<5; i++) {
    x[i] = i*i;
 }
-}}}
-What is the value of `*(&amp;x[2]+1)`? 
+```
+
+What is the value of *(&x[2]+1)? 
 
  .[A] 0
  .[B] 1
@@ -108,7 +109,7 @@ What is the value of `*(&amp;x[2]+1)`?
 
 Given the following fragment of code
 
-{{{
+```c
 int b = 2;
 int a = 1;
 int *p = NULL;
@@ -117,8 +118,7 @@ p = &a;
 p =&b;
 *p = b;
 printf("%d\n",a);
-}}}
-
+```
 
 What will this program print out?
 
@@ -134,7 +134,7 @@ What will this program print out?
 
 Given the following fragment of code
 
-{{{
+```c
 typedef struct _complex *Complex;
 typedef struct _complex {
    double real;
@@ -154,10 +154,10 @@ Complex c;
 Complex d;
 c = add(b,a);
 d = add(*c,a);
-}}}
+```
 
 
-What will the value of `d->real` after executing this code?
+What will the value of d->real after executing this code?
 
  .[A] 1.0
  .[B] 3.0
@@ -172,7 +172,7 @@ What will the value of `d->real` after executing this code?
 
 Consider the following code fragment:
 
-{{{
+```c
    int x[] = {0, 1, 2, 3};
    int temp;
    int i;
@@ -183,7 +183,7 @@ Consider the following code fragment:
       x[j] = 2*temp;
       j--;
    }
-}}}
+```
 
 After this code is executed, array x contains the values:
  .[A] {3, 2, 2, 0}
@@ -196,9 +196,9 @@ After this code is executed, array x contains the values:
 
 (3 Marks)
 
-Consider the following definitions for a `List` (note that we are keeping
+Consider the following definitions for a List (note that we are keeping
 track of the last element of the list).
-{{{
+```c
 typedef struct _list *List;
 typedef struct _node *nodePointer;
 
@@ -211,11 +211,11 @@ typedef struct _list {
   nodePointer first; 
   nodePointer last; 
 } list;
-}}}
+```
 
 Here is a fragment of code that I wrote to add a value `v` to the end
 of the list in the case where the list has at least one element.
-{{{
+```c
 addToEndOfNonemptyList(List l, int v){
    nodePointer temp;
    assert(l->last != NULL);
@@ -226,7 +226,7 @@ addToEndOfNonemptyList(List l, int v){
    l->last->next = temp;        //Line 4
    temp->next = NULL;           //Line 5
 }
-}}}
+```
 
 Of course, as you all know I make lots of mistakes in my programs and
 the five numbered lines in the code above might have to be rearranged
@@ -246,40 +246,40 @@ numbered lines of code that makes the function correct?
 
 Which of the following code fragments calculates the product of the
 first N values in a an array declared like this:
-{{{
+```c
 int a[N];
 int product;
 int i;
-}}}
+```
 
  .[A]  
-{{{
+```c
 product = 1;
 for (i = 0; i <= N; i++) {
    product *= a[i];
 }
-}}}
+```
  .[B] 
-{{{
+```c
 product = 0;
 for (i = 0; i <= N; i++) {
    product *= a[i];
 }
-}}}
+```
  .[C] 
-{{{
+```c
 product = 0;
 for (i = 1; i <= N-1; i++) {
    product *= a[i];
 }
-}}}
+```
  .[D] 
-{{{
+```c
 product = 1;
 for (i = 1; i <= N-1; i++) {
    product *= a[i];
 }
-}}}
+```
  .[E] None of the above
 
 
@@ -290,7 +290,7 @@ for (i = 1; i <= N-1; i++) {
 
 What is the output of the following 4003 program? (I've added comments
 giving the address and meaning of each instruction.)
-{{{
+```asm
 1 //0 R0++
 1 //1 R0++
 3 //2 R1++
@@ -302,7 +302,7 @@ giving the address and meaning of each instruction.)
 5 //9 R0<->R1
 7 //10 Print R0
 0 //11 Halt
-}}}
+```
 
  .[A] 0
  .[B] 2
@@ -316,7 +316,7 @@ giving the address and meaning of each instruction.)
 
 Given the following fragment of code
 
-{{{
+```c
 #define N 6
 int i;
 char a[N];
@@ -325,7 +325,7 @@ for (i = 0; i < N-1; i++){
 }
 a[2] = '\0';
 printf("%c\n",a[1+strlen(a)]);
-}}}
+```
 
 What will this program print out?
 
@@ -341,7 +341,7 @@ What will this program print out?
 
 Consider the following code fragment:
 
-{{{
+```c
 int g(int *x, int y, int z){
    z = *x;
    *x = y;
@@ -357,7 +357,7 @@ int x = 1;
 int y = 2;
 int z = 3;
 x = f(&z, x, &y);
-}}}
+```
 
 After this code is executed, x has the value:
  .[A] 1
@@ -372,7 +372,7 @@ After this code is executed, x has the value:
 (3 Marks)
 
 Consider the following code:
-{{{
+```c
 // insert a value into the first position in an array,
 //moving everthing else up to make room
 void insert(int a[], int *size, int value) {
@@ -383,7 +383,7 @@ void insert(int a[], int *size, int value) {
    a[0] = value;
    *size++;
 }
-}}}
+```
 
 What is the main point you would raise in reviewing the above code?
 
@@ -400,13 +400,13 @@ __________
 
 Given the following code:
 
-{{{
+```c
 char str[] = "a dog!";
 int len = strlen(str);
 str[len] = '\n';
 str[len+1] = '\0';
 printf("%s\n",str);
-}}}
+```
 
 What is the main point you would raise in reviewing the above code?
 
@@ -435,9 +435,9 @@ one sympathy mark and your answer for that question will not be marked.
 (6 Marks)
 
 Write a function with prototype
-{{{
+```c
 int drawBox(int n);
-}}}
+```
 
 that draws a hollow box n characters wide and high using '*' and ' '
 characters.
@@ -475,9 +475,9 @@ the ctype.h library, write a function that tests if a character is a
 letter or a number. You should use the following
 prototype.
 
-{{{
+```c
 int isAlNum (char c);
-}}}
+```
 
 __________
 __________
@@ -558,7 +558,7 @@ one sympathy mark and your answer for that question will not be marked.
 (8 Marks)
 
 Consider the following definitions for a `List` 
-{{{
+```c
 typedef struct _list *List;
 typedef struct _node *nodePointer;
 
@@ -570,12 +570,12 @@ typedef struct _node {
 typedef struct _list {
   nodePointer first; 
 } list;
-}}}
+```
 
 Write a function which implements the prototype
-{{{
+```c
 void replaceOne (List l, int old, int new);
-}}}
+```
 which replaces the first occurence of the value `old` in the list with
 `new`. For example, if `l` has the values 1,2,4,2 in that order after
 `replaceOne (l, 2, 7);` 
