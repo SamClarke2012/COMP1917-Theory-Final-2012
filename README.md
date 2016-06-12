@@ -1,10 +1,15 @@
 # COMP1917-Theory-Final-2012
 
 = COMP1917 Final Exam 2012s1 =
+
 == Afternoon ==
+
 == Time allowed: 2.5 Hours ==
+
 == Total number of questions: 21 ==
+
 == Total number of marks: 100 ==
+
 
 Write your answers in the text boxes in this application.
 Your answers can be submitted by pressing save on this application.
