@@ -100,7 +100,7 @@ What is the value of *(&x[2]+1)?
 + [A] 0
 + [B] 1
 + [C] 4
-+ [D] **9 - Dereferenced value at pointer (x[2])+1)**
++ **[D] 9 - Dereferenced value at pointer (x[2])+1)**
 + [E] None of the above
 
 
