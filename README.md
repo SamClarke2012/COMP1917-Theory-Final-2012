@@ -59,7 +59,7 @@ char str[] = "Hello World?";
 The size of the array str in characters is:
  
 + [A] 12
-+ **[B] 13**
++ **[B] 13 - Don't forget double quotes come with a '\0' char**
 + [C] 24
 + [D] 26
 + [E] None of the above
