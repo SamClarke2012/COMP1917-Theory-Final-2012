@@ -513,7 +513,21 @@ int isAlNum( char c ){
     return ans;
 }
 ```
+Or alternatively  (style guide dependant)
 
+```c
+int isAlNum( char c ){
+    int ans;
+    if( ( c >= '0' && c <= '9' ) ||
+        ( c >= 'A' && c <= 'Z' ) ||
+        ( c >= 'a' && c <= 'z'))  {
+        ans = 1;
+    } else {
+        ans = 0;
+    }
+    return ans;
+}
+```
 === Question 15 ===
 
 (7 Marks)
