@@ -56,7 +56,6 @@ Consider the following C definition:
 char str[] = "Hello World?";
 }}}
 
-
 The size of the array str in characters is:
  
  .[A] 12
@@ -65,11 +64,8 @@ The size of the array str in characters is:
  .[D] 26
  .[E] None of the above
  
- 
 === Question 1 ===
-
 (2 Marks)
-
 
 Consider the following C code:
 {{{
