@@ -79,7 +79,7 @@ What is the value of s[4]?
 + [B] 0
 + [C] segmentation violation
 + [D] 4
-+ **[E] None of the above - resolves the NULL char '\0'. Technically this is zero, but the tpe of value is undefined.  Assuming value as char**
++ **[E] None of the above - resolves the NULL char '\0'. Technically this is zero, but the type of value is undefined.  Assuming value as char**
 
 
 === Question 2 ===
